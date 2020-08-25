@@ -1,0 +1,53 @@
+<web-app>
+	<servlet>
+		<servlet-name>authServlet</servlet-name>
+		<servlet-class>services.Connexion</servlet-class>
+	</servlet>
+	<servlet-mapping> 
+		<servlet-name>authServlet</servlet-name> 
+		<url-pattern>/authentication</url-pattern> 
+	</servlet-mapping> 
+	
+	<servlet>
+		<servlet-name>accServlet</servlet-name>
+		<servlet-class>services.Accueil</servlet-class>
+	</servlet>
+	<servlet-mapping> 
+		<servlet-name>accServlet</servlet-name> 
+		<url-pattern>/accueil</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>empServlet</servlet-name>
+		<servlet-class>services.Emprunt</servlet-class>
+	</servlet>
+	<servlet-mapping> 
+		<servlet-name>empServlet</servlet-name> 
+		<url-pattern>/emprunter</url-pattern> 
+	</servlet-mapping> 
+	<servlet>
+		<servlet-name>retServlet</servlet-name>
+		<servlet-class>services.Rendre</servlet-class>
+	</servlet>
+	<servlet-mapping> 
+		<servlet-name>retServlet</servlet-name> 
+		<url-pattern>/rendre</url-pattern> 
+	</servlet-mapping> 
+	<servlet>
+		<servlet-name>addServlet</servlet-name>
+		<servlet-class>services.Ajout</servlet-class>
+	</servlet>
+	<servlet-mapping> 
+		<servlet-name>addServlet</servlet-name> 
+		<url-pattern>/ajouter</url-pattern> 
+	</servlet-mapping> 
+	
+	<servlet>
+		<servlet-name>decoServlet</servlet-name>
+		<servlet-class>services.Deconnexion</servlet-class>
+	</servlet>
+	<servlet-mapping> 
+		<servlet-name>decoServlet</servlet-name> 
+		<url-pattern>/deconnexion</url-pattern> 
+	</servlet-mapping> 
+</web-app>
